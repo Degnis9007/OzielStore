@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+
+    
+    <!-- Definir el conjunto de caracteres para el documento -->
+    <meta charset="UTF-8">
+    <!-- Hacer que la página sea responsiva, ajustándose al tamaño de la pantalla del dispositivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la página -->
+    <title>OZIEL ACCESSORIES & CLOTHES</title>
+    <!-- Enlace a los archivos de estilos CSS para la página principal y el carrito -->
+    <link rel="stylesheet" href="CSS/home.css">
+    <link rel="stylesheet" href="CSS/cart.css">
+</head>
+<body>
+    <!-- Header: Encabezado de la página con la marca y la navegación -->
+    <header class="header">
+        <div class="logo">
+            <!-- Título o nombre de la tienda -->
+            <h1 class="Mitienda">Ozziel Accessories & Clothes</h1>
+        </div>
+        <nav class="nav">
+            <!-- Enlaces de navegación -->
+            <a href="#">Inicio</a> <!-- Enlace a la página principal -->
+            <a href="#" id="btn-products">productos</a> <!-- Enlace a los productos con un id para manipulación JavaScript -->
+            <a href="#">Contacto</a> <!-- Enlace a la sección de contacto -->
+            <!-- Enlace al login con un botón primario -->
+            <a href="login.html" class="btn-primary" id="btnlogin"></a>
+        </nav>
+    </header>
+
+    <!-- Banner con una oferta de temporada -->
+    <section class="banner">
+        <h2>Ofertas Exclusivas de Temporada</h2>
+        <br></br>
+        <p>¡ Descuentos de hasta el 50% en productos seleccionados !</p>
+    </section>
+
+    <!-- Sección de productos destacados -->
+    <section class="featured-products" id="container-productos">
+        <h2 id="products-title">Nuevos Productos</h2>
+        <!-- Filtros de categoría y marca de los productos -->
+        <div class="filters" id="filters" style="display: none;">
+            <select id="category-filter">
+                <!-- Filtros de categorías disponibles para los productos -->
+                <option value="">Todas las Categorías</option>
+                <option value="HOM">Hombre</option>
+                <option value="MUJ">Dama</option>
+            </select>
+            <select id="supplier-filter">
+                <!-- Filtros de marcas disponibles para los productos -->
+                <option value="">Todas las Marcas</option>
+                <option value="1">Nike</option>
+                <option value="2">Reebok</option>
+            </select>
+        </div>
+        <!-- Contenedor para mostrar los productos -->
+        <div class="product-list" id="product-list"></div>
+    </section>
+
+    <!-- Icono del carrito de compras que muestra el número de artículos -->
+    <div id="cart-icon">
+        🛒 <span id="cart-count">0</span> <!-- Muestra la cantidad de productos en el carrito -->
+    </div>
+
+    <!-- Modal para mostrar el contenido del carrito -->
+    <div id="cart-modal" class="hidden">
+        <div id="cart-modal-content">
+            <h2>Tu Carrito</h2>
+            <ul id="cart-list"></ul> <!-- Lista de productos en el carrito -->
+            <p id="cart-total">Total: $0</p> <!-- Total del carrito -->
+            <!-- Botones para proceder al pago o cerrar el modal -->
+            <button id="checkout-btn" class="btn-primary">Proceder al Pago</button>
+            <button id="close-cart" class="btn-secondary">Cerrar</button>
+        </div>
+    </div>
+
+    <!-- Sección de testimonios de clientes -->
+    <section class="testimonials">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <div class="testimonial">
+            <!-- Testimonio de un cliente satisfecho -->
+            <p>“Excelente servicio y productos de calidad. ¡Muy recomendado!”</p>
+            <h4>- Cliente Satisfecho</h4>
+        </div>
+        <!-- Se pueden agregar más testimonios aquí -->
+    </section>
+
+    <!-- Footer: Pie de página con la información legal y enlaces a redes sociales -->
+    <footer class="footer">
+        <p>&copy; 2024 Oziel Accessories & Clothes. all rights reserved.</p>
+        <div class="social-links">
+            <!-- Enlaces a redes sociales -->
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+    <!-- Enlaces a los archivos JavaScript para la página principal y el carrito -->
+    <script src="JS/home.js"></script>
+    <script src="JS/cart.js"></script>
+</body>
+</html>

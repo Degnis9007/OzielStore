@@ -1,0 +1,133 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #ddd; /* Gris claro para el texto */
+    background-color: #121212; /* Fondo oscuro */
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #222; /* Gris oscuro */
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Sutil borde */
+}
+
+.nav a {
+    color: #fff;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: #ccc; /* Gris claro en hover */
+}
+
+/* Botones */
+.btn-primary, .btn-secondary {
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px; /* Borde redondeado */
+    transition: background-color 0.3s, transform 0.3s; /* Animación de color y escala */
+}
+
+.btn-primary {
+    background-color: #444; /* Gris oscuro */
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #555; /* Gris más claro en hover */
+    transform: scale(1.05); /* Efecto de aumento al hacer hover */
+}
+
+.btn-secondary {
+    background-color: #666; /* Gris más suave */
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #777; /* Gris intermedio en hover */
+}
+
+/* Categorías */
+.category-list, .product-list {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.category-item, .product-item {
+    border: 1px solid #333; /* Gris más oscuro */
+    background-color: #333; /* Gris oscuro de fondo */
+    color: #fff; /* Texto blanco */
+    padding: 1rem;
+    width: 200px;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.category-item:hover, .product-item:hover {
+    background-color: #555; /* Gris más claro en hover */
+    transform: scale(1.05); /* Efecto de aumento en hover */
+}
+
+.category-item img, .product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px; /* Bordes redondeados en las imágenes */
+}
+
+/* Banner */
+.banner {
+    background-image: url('banner.jpg');
+    background-size: cover;
+    color: #fff;
+    padding: 4rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro con opacidad */
+}
+
+/* Sección de categorías, productos y testimonios */
+.categories, .featured-products, .testimonials {
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Testimonios */
+.testimonial {
+    color: #bbb; /* Gris suave */
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+.footer {
+    background-color: #222; /* Gris oscuro */
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.footer a {
+    color: #bbb; /* Gris suave para enlaces */
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #fff; /* Blanco al hacer hover */
+}
